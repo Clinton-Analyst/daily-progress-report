@@ -1,0 +1,13 @@
+date,crew_count,work_completed_%,equipment_hours,weather_impact,notes
+2/1/2025,45,78,120.0,Low,Foundation work done
+2/2/2025,40,65,100.0,High Rain,Delays on Level 2
+2/3/2025,50,82,135.0,Low,Steel frame installed
+2/4/2025,48,70,115.0,Medium Wind,Concrete pour completed
+2/5/2025,42,60,95.0,High Rain,Work suspended - Level 3
+2/6/2025,55,88,150.0,Low,Roofing started
+2/7/2025,52,85,140.0,Low,MEP rough-in begun
+2/8/2025,38,55,80.0,High Rain,Significant weather delays
+2/9/2025,46,75,110.0,Low,Drywall installation
+2/10/2025,50,80,130.0,Low,Exterior cladding progress
+2026-03-12,80,65,110.0,High,Planned work not completed 
+2026-03-12,100,55,90.0,Low,Medium productivity

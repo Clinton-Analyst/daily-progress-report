@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title = "Daily Site Progress Report", layout = "wide")
 st.title("Daily Progress Report - Dashboard")
@@ -62,22 +64,42 @@ with st.form("dpr_form", clear_on_submit=True):
 st.write("### Current Dataset")
 st.dataframe(df)
 
+# Safety and Incident report
+st.header("Safety & Incident Report")
 
+df_safety=pd.read_csv("safety_incidents.csv")
 
+# Display Safety data
+st.write("Safety Data")
+st.dataframe(df_safety)
 
+# Summary KPIs
+col1, col2, col3=st.columns(3)
+col1.metric("Total incidents", len(df_safety))
+col2.metric("PPE Non-Compliance", len(df_safety[df_safety['ppe_compliant']=='No']))
+col3.metric("High Severity", len(df_safety[df_safety['severity']=='High']))
 
+# Heatmap Floor vs Trade incident count
+heatmap_data=df_safety.pivot_table(
+    index='location_floor',
+    columns="trade",
+    values="incident_type",
+    aggfunc="count",
+    fill_value=0
+)
 
-        #new_row.to_csv("daily_progress.csv", mode='a', header=False, index=False)
-        #df=pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-        #df.to_csv("daily_progress.csv")
-        #st.success("Report Submitted Successfully!!")
+fig, ax=plt.subplots(figsize=(10,5))
+sns.heatmap(heatmap_data, annot=True, fmt='d', ax=ax)
+ax.set_title("Incident Heatmap: Floor vs Trade")
+st.pyplot(fig)
 
-    #if submitted:
-     #   new_report={"Date": date, "Crew": crew, "Work_pct": work_pct,
-      #              "Equipment_hours": equip_hours, "Weather": weather, "Notes": notes}
-        # append new row
-       # df=pd.concat([df, pd.DataFrame([new_report])], ignore_index=True)
-        # Save back to CSV
-        #df.to_csv("daily_progress.csv")
+# Bar: Incident by Severity
+fig3=px.bar(df_safety, x='incident_type', color='severity', title='Incidents by Type & Severity', barmode='group')
+st.plotly_chart(fig3, use_container_width=True)
 
-        #st.success("Report Submitted Successfully!!!")
+# PPE Compliance Pie
+ppe_counts = df_safety['ppe_compliant'].value_counts().reset_index()
+fig4 = px.pie(ppe_counts, names='ppe_compliant', values='count',
+title='PPE Compliance Rate',
+color_discrete_sequence=['#EF553B', '#00CC96'])
+st.plotly_chart(fig4, use_container_width=True)

@@ -1,0 +1,11 @@
+date,incident_type,location_floor,trade,severity,ppe_compliant
+2/1/2025,Near-Miss,Floor 3,Electrical,Medium,No
+2/2/2025,PPE Violation,Floor 1,Masonry,Low,No
+2/3/2025,Near-Miss,Floor 5,Steel,High,Yes
+2/4/2025,First Aid,Floor 2,Carpentry,Low,Yes
+2/5/2025,PPE Violation,Floor 4,Plumbing,Low,No
+2/6/2025,Near-Miss,Floor 6,Electrical,Medium,No
+2/7/2025,Property Damage,Floor 1,Masonry,Medium,Yes
+2/8/2025,First Aid,Floor 3,Steel,Low,Yes
+2/9/2025,PPE Violation,Floor 2,Carpentry,Low,No
+2/10/2025,Near-Miss,Floor 5,Plumbing,High,No

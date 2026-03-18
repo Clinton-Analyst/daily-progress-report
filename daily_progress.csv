@@ -11,3 +11,6 @@ date,crew_count,work_completed_%,equipment_hours,weather_impact,notes
 2/10/2025,50,80,130.0,Low,Exterior cladding progress
 2026-03-12,80,65,110.0,High,Planned work not completed 
 2026-03-12,100,55,90.0,Low,Medium productivity
+2026-03-17,90,92,120.0,Low,Planned Task Completed
+2026-03-18,60,68,90.0,Low,Complete
+2026-03-18,120,92,100.0,Medium,Work completed

@@ -1,11 +1,12 @@
 date,subcontractor,defect_type,inspection_result,rework_required
-2/1/2025,ABC Plumbing,Pipe Leak,Fail,Yes
-2/2/2025,XYZ Electric,Wiring Issue,Fail,Yes
-2/3/2025,ABC Plumbing,Joint Gap,Fail,Yes
-2/4/2025,BuildRight Masonry,Cracked Tiles,Fail,Yes
-2/5/2025,XYZ Electric,Loose Connection,Fail,Yes
-2/6/2025,ABC Plumbing,Pressure Drop,Fail,Yes
-2/7/2025,SteelPro Inc,Misaligned Beam,Fail,Yes
-2/8/2025,BuildRight Masonry,Grout Failure,Fail,Yes
-2/9/2025,XYZ Electric,Panel Labeling,Pass,No
-2/10/2025,SteelPro Inc,Weld Quality,Pass,No
+2025-02-01 00:00:00,ABC Plumbing,Pipe Leak,Fail,Yes
+2025-02-02 00:00:00,XYZ Electric,Wiring Issue,Fail,Yes
+2025-02-03 00:00:00,ABC Plumbing,Joint Gap,Fail,Yes
+2025-02-04 00:00:00,BuildRight Masonry,Cracked Tiles,Fail,Yes
+2025-02-05 00:00:00,XYZ Electric,Loose Connection,Fail,Yes
+2025-02-06 00:00:00,ABC Plumbing,Pressure Drop,Fail,Yes
+2025-02-07 00:00:00,SteelPro Inc,Misaligned Beam,Fail,Yes
+2025-02-08 00:00:00,BuildRight Masonry,Grout Failure,Fail,Yes
+2025-02-09 00:00:00,XYZ Electric,Panel Labeling,Pass,No
+2025-02-10 00:00:00,SteelPro Inc,Weld Quality,Pass,No
+2026-03-18,ABC Plumbing,Pipe Leakage,Fail,Yes

@@ -9,3 +9,4 @@ date,incident_type,location_floor,trade,severity,ppe_compliant
 2/8/2025,First Aid,Floor 3,Steel,Low,Yes
 2/9/2025,PPE Violation,Floor 2,Carpentry,Low,No
 2/10/2025,Near-Miss,Floor 5,Plumbing,High,No
+2026-03-18,Near-Miss,Floor 1,Electrical,High,Yes
